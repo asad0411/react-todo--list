@@ -2,6 +2,7 @@ import { useState } from "react";
 import TodoItem from "./TodoItem";
 
 function TodoList() {
+  
   const [tasks, setTasks] = useState([
     {
       id: 1,
@@ -26,7 +27,9 @@ function TodoList() {
     setText("");
   }
   function deleteTask(id) {
+
     setTasks(tasks.filter((task) => task.id !== id));
+
   }
   function toggleCompleted(id) {
     setTasks(

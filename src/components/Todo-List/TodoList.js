@@ -2,7 +2,7 @@ import { useState } from "react";
 import TodoItem from "./TodoItem";
 
 function TodoList() {
-  
+
   const [tasks, setTasks] = useState([
     {
       id: 1,
@@ -14,6 +14,16 @@ function TodoList() {
       text: "Meeting at School",
       completed: false,
     },
+    {
+      id: 3,
+      text: "checking",
+      completed: true,
+    },
+    {
+      id: 4,
+      text: "Masking",
+      completed: false,
+    }
   ]);
 
   const [text, setText] = useState("");
